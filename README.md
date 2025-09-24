@@ -1,128 +1,55 @@
-# 🎓 EduCredChain – Salesforce Blockchain Credential & Scholarship Manager  
+## Phase 1 — Problem Understanding & Industry Analysis
 
-![License](https://img.shields.io/badge/License-MIT-blue.svg)  
-![Salesforce](https://img.shields.io/badge/Salesforce-Cloud-blue)  
-![Blockchain](https://img.shields.io/badge/Blockchain-Enabled-green)  
-
-A Salesforce-powered **Education CRM** that manages the complete student lifecycle, issues **tamper-proof blockchain credentials**, and automates **scholarship/loan disbursements** using smart contracts.  
+**Goal**  
+EduCredChain aims to solve the rising issues in education credential management by using **Salesforce + Blockchain**.  
+It ensures secure credential issuance, tamper-proof verification, and automated scholarship disbursements, while providing transparency for all stakeholders.
 
 ---
 
-## 📌 Project Overview  
-
-Educational institutions and recruiters face increasing problems with:  
-- Fake certificates and forged degrees  
-- Manual and slow credential verification  
-- Delayed scholarship and loan disbursements  
-
-**EduCredChain** solves these challenges by combining **Salesforce CRM + Blockchain** to:  
-- Issue blockchain-backed, verifiable certificates  
-- Provide recruiters with instant verification via Salesforce Experience Cloud  
-- Automate scholarship/loan disbursements via milestone-based smart contracts  
+### 1. Requirement Gathering
+- Universities issue blockchain-secured credentials instead of paper/digital copies.  
+- Recruiters instantly verify authenticity online.  
+- Students access credentials and scholarship disbursement status anytime.  
+- Financial institutions automate milestone-based disbursements.  
+- Institutions get dashboards for monitoring academic and financial data.  
 
 ---
 
-## 📌 Key Features  
-
-### 🎓 Student Features  
-- View verified blockchain certificates  
-- Apply for scholarships/loans digitally  
-- Track disbursement status in real time  
-
-### 🏫 University Features  
-- Manage student lifecycle (admission → courses → graduation)  
-- Issue blockchain-anchored credentials directly from Salesforce  
-- Automate milestone-based scholarship releases  
-
-### 🏢 Recruiter Features  
-- Instantly verify candidate credentials  
-- Access verified transcripts & certificates  
-- Reduce hiring fraud and verification delays  
-
-### 💰 Finance Features  
-- Manage scholarships, loans, and refunds via CRM  
-- Smart contracts auto-release funds when milestones are met (e.g., GPA ≥ 3.5, course completion)  
-- Full visibility of financial disbursements  
+### 2. Stakeholder Analysis
+- **Students** → Need secure, instant access to academic records and scholarships.  
+- **Recruiters/Employers** → Require fast, tamper-proof credential verification.  
+- **Universities/Institutions** → Want to reduce forgery and administrative workload.  
+- **Financial Institutions** → Seek automated, transparent scholarship/loan disbursements.  
 
 ---
 
-## 📌 Salesforce Implementation  
+### 3. Business Process Mapping
+**Credential Lifecycle**
+1. University issues credential.  
+2. Credential stored on blockchain.  
+3. Student accesses it instantly.  
+4. Recruiter verifies authenticity securely.  
 
-### Phase 1: Problem Understanding & Industry Analysis  
-- **Challenges:** Fake certificates, delayed verification, scholarship fraud  
-- **Industry Needs:** Tamper-proof credentials, faster verification, automated fund flows  
-- **Solution Scope:** Salesforce CRM + Blockchain APIs (Polygon, Hyperledger, Avalanche)  
-
-### Phase 2: Org Setup & Configuration  
-
-**Custom Objects:**  
-- `Student__c` – Name, Contact, Enrollment Info  
-- `Course__c` – Course Name, Duration, Credits  
-- `Credential__c` – Certificate Hash, Blockchain TxID, Issue Date  
-- `Scholarship__c` – Amount, Eligibility, Status, Smart Contract Link  
-- `Recruiter__c` – Company, Verification Requests  
-
-**Profiles & Permission Sets:**  
-- Admin – Full Access  
-- University Staff – Manage Students, Courses, Credentials  
-- Finance Officer – Manage Scholarships & Loans  
-- Recruiter – Verification-only access (via portal)  
-- Student – Access to own records (via Experience Cloud)  
-
-**Page Layouts:**  
-- Student → Courses, Credentials, Scholarships  
-- Recruiter → Verification requests, student details  
-- Scholarship → Smart contract status & logs  
-
-### Phase 3: Data Modeling & Relationships  
-- Student ↔ Course → M:M (via `Enrollment__c`)  
-- Student ↔ Credential → 1:M  
-- Student ↔ Scholarship → 1:M  
-- Recruiter ↔ Verification_Request → 1:M  
-
-### Phase 4: Process Automation  
-- **Credential Issuance Flow** → Generates blockchain hash on credential creation  
-- **Scholarship Disbursement Flow** → Auto-release payment on milestone completion  
-- **Verification Flow** → Notifies recruiters when credential is verified  
-- **Email/SMS Alerts** → For certificate issuance, scholarship payouts, and verification updates  
+**Scholarship Lifecycle**
+1. Student applies for scholarship.  
+2. Application approved by institution/financier.  
+3. Funds disbursed automatically on milestone completion.  
+4. Status updates available to student and institution in real time.  
 
 ---
 
-## 📌 Benefits  
-
-✅ Tamper-proof Credentials – Eliminates fake certificates  
-✅ Faster Verification – Recruiters verify instantly via blockchain  
-✅ Automated Payouts – Scholarships/loans released via smart contracts  
-✅ Transparency & Trust – Real-time visibility for all stakeholders  
-✅ Scalability – Works for universities, EdTechs, and recruiters globally  
-
----
-
-## 📌 Tech Stack  
-
-- **Platform:** Salesforce (Education Cloud / Core CRM)  
-- **Blockchain:** Hyperledger / Polygon / Avalanche (via API integration)  
-- **Automation:** Salesforce Flows, Validation Rules, Email Alerts  
-- **Data Model:** Custom Objects & Relationships  
-- **Portal:** Salesforce Experience Cloud (for students & recruiters)  
+### 4. Industry-specific Use Case Analysis
+- Fake certificates → Damage credibility of institutions.  
+- Manual verification → Slow, resource-heavy, error-prone.  
+- Scholarship fraud/delays → Reduce student trust and satisfaction.  
+- Data fragmentation → Records scattered across multiple systems.  
+- Limited insights → Difficult to analyze performance.  
+- **Blockchain + Salesforce integration** → Brings automation, transparency, and security.  
 
 ---
 
-## 📌 How to Get Started  
-
-1. Sign up for a [Salesforce Developer Org](https://developer.salesforce.com).  
-2. Clone this repository.  
-3. Create custom objects & relationships.  
-4. Configure profiles, layouts, and portals.  
-5. Implement automation flows & blockchain API integration.  
-6. Deploy dashboards for real-time insights.  
-
----
-
-## 📌 System Architecture  
-
-- AI Student Portal (Experience Cloud)  
-- Salesforce Blockchain Layer  
-- Smart Contract Engine  
-- External Data Sources  
-- Real-Time Dashboard & Analytics
+### 5. AppExchange Exploration (Optional)
+EduCredChain will focus on a custom Salesforce + Blockchain system to:  
+- Ensure credential authenticity.  
+- Automate verification and disbursements.  
+- Provide transparent dashboards for all stakeholders.
