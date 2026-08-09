@@ -11,7 +11,7 @@
 
 **A secure, biometric-enabled electronic voting platform combining AI-driven Face Recognition & Anti-Spoofing detection with Ethereum Smart Contracts (Solidity, Hardhat, Ethers.js) for tamper-proof ballot recording.**
 
-[Live Demo App](https://bhavanagangavaram.github.io/AI_Integrated_Decentalized_E_Voting_System/) · [Live Repository](https://github.com/bhavanagangavaram/AI_Integrated_Decentalized_E_Voting_System) · [Report Bug](https://github.com/bhavanagangavaram/AI_Integrated_Decentalized_E_Voting_System/issues)
+[Live Repository](https://github.com/bhavanagangavaram/AI_Integrated_Decentalized_E_Voting_System) · [Report Bug](https://github.com/bhavanagangavaram/AI_Integrated_Decentalized_E_Voting_System/issues)
 
 </div>
 
