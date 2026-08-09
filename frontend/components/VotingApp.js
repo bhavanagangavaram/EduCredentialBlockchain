@@ -54,6 +54,12 @@ export default function VotingApp() {
     const [connecting, setConnecting] = useState(false);
     const [connectError, setConnectError] = useState('');
 
+    const handleDemoConnect = () => {
+        setAccount('0x71C7656EC7ab88b098defB751B7401B5f6d8976F');
+        setContract(null);
+        setConnectError('');
+    };
+
     const handleConnect = async () => {
         setConnecting(true);
         setConnectError('');
@@ -167,13 +173,21 @@ export default function VotingApp() {
                         <p className="text-gray-400 text-center max-w-lg mb-10 text-lg leading-relaxed">
                             Secure, transparent, and inclusive elections powered by Ethereum Blockchain.
                         </p>
-                        <button
-                            onClick={handleConnect}
-                            disabled={connecting}
-                            className="btn-primary text-lg !py-4 !px-10 animate-glow"
-                        >
-                            {connecting ? <><span className="spinner mr-2" /> Connecting…</> : 'Connect MetaMask'}
-                        </button>
+                        <div className="flex flex-wrap gap-4 justify-center">
+                            <button
+                                onClick={handleConnect}
+                                disabled={connecting}
+                                className="btn-primary text-lg !py-4 !px-8 animate-glow"
+                            >
+                                {connecting ? <><span className="spinner mr-2" /> Connecting…</> : 'Connect MetaMask'}
+                            </button>
+                            <button
+                                onClick={handleDemoConnect}
+                                className="btn-ghost text-lg !py-4 !px-8 border border-purple-500/40 text-purple-300 hover:bg-purple-500/10"
+                            >
+                                Explore Live Demo
+                            </button>
+                        </div>
                         {connectError && (
                             <div className="status-error mt-6 px-5 py-3 rounded-xl text-sm font-medium max-w-md text-center animate-fade-in flex items-center gap-2 justify-center">
                                 <svg className="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
