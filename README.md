@@ -11,7 +11,7 @@
 
 **A secure, biometric-enabled electronic voting platform combining AI-driven Face Recognition & Anti-Spoofing detection with Ethereum Smart Contracts (Solidity, Hardhat, Ethers.js) for tamper-proof ballot recording.**
 
-[Live Demo App](https://bhavanagangavaram.github.io/AI-Integrated-Decentalized-E-Voting-System/) · [Live Repository](https://github.com/bhavanagangavaram/AI-Integrated-Decentalized-E-Voting-System) · [Report Bug](https://github.com/bhavanagangavaram/AI-Integrated-Decentalized-E-Voting-System/issues)
+[Live Demo App](https://bhavanagangavaram.github.io/AI_Integrated_Decentalized_E_Voting_System/) · [Live Repository](https://github.com/bhavanagangavaram/AI_Integrated_Decentalized_E_Voting_System) · [Report Bug](https://github.com/bhavanagangavaram/AI_Integrated_Decentalized_E_Voting_System/issues)
 
 </div>
 
@@ -57,7 +57,7 @@ flowchart TD
 ## 📂 Repository Structure
 
 ```
-AI-Integrated-Decentalized-E-Voting-System/
+AI_Integrated_Decentalized_E_Voting_System/
 ├── contracts/          # Solidity smart contracts & Hardhat deploy scripts
 ├── frontend/           # Next.js 16 + React 19 web interface
 │   ├── app/            # App router & layout templates
@@ -83,8 +83,8 @@ AI-Integrated-Decentalized-E-Voting-System/
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/bhavanagangavaram/AI-Integrated-Decentalized-E-Voting-System.git
-   cd AI-Integrated-Decentalized-E-Voting-System
+   git clone https://github.com/bhavanagangavaram/AI_Integrated_Decentalized_E_Voting_System.git
+   cd AI_Integrated_Decentalized_E_Voting_System
    ```
 
 2. **Install All Dependencies**
