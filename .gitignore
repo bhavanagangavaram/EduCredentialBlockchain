@@ -10,6 +10,8 @@ _CD_Bundle*
 *.mp4
 *.docx
 *.db
+__pycache__/
+*.pyc
 *.cpython-*.pyc
 
 # Sensitive Secrets & Private Keys
