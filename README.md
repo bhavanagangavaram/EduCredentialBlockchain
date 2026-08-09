@@ -11,7 +11,7 @@
 
 **A secure, biometric-enabled electronic voting platform combining AI-driven Face Recognition & Anti-Spoofing detection with Ethereum Smart Contracts (Solidity, Hardhat, Ethers.js) for tamper-proof ballot recording.**
 
-[Live Demo App](https://bhavanagangavaram.github.io/EduCredentialBlockchain/) · [Live Repository](https://github.com/bhavanagangavaram/EduCredentialBlockchain) · [Report Bug](https://github.com/bhavanagangavaram/EduCredentialBlockchain/issues)
+[Live Demo App](https://bhavanagangavaram.github.io/AI-Integrated-E-Voting-System/) · [Live Repository](https://github.com/bhavanagangavaram/AI-Integrated-E-Voting-System) · [Report Bug](https://github.com/bhavanagangavaram/AI-Integrated-E-Voting-System/issues)
 
 </div>
 
@@ -83,8 +83,8 @@ AI-Integrated-E-Voting-System/
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/bhavanagangavaram/EduCredentialBlockchain.git
-   cd EduCredentialBlockchain
+   git clone https://github.com/bhavanagangavaram/AI-Integrated-E-Voting-System.git
+   cd AI-Integrated-E-Voting-System
    ```
 
 2. **Install All Dependencies**
