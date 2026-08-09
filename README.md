@@ -1,16 +1,17 @@
 <div align="center">
 
-# 🎓 EduCredential Blockchain
+# 🤖 AI Integrated & Blockchain E-Voting System
 
+[![React 19](https://img.shields.io/badge/React-19.2-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
+[![Next.js 16](https://img.shields.io/badge/Next.js-16.1-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)](https://nextjs.org/)
 [![Solidity](https://img.shields.io/badge/Solidity-0.8.20-363636?style=for-the-badge&logo=solidity&logoColor=white)](https://soliditylang.org/)
 [![Hardhat](https://img.shields.io/badge/Hardhat-2.22-FFF100?style=for-the-badge&logo=hardhat&logoColor=black)](https://hardhat.org/)
-[![Ethers.js](https://img.shields.io/badge/Ethers.js-v6-2535A0?style=for-the-badge&logo=ethereum&logoColor=white)](https://docs.ethers.org/)
-[![Node.js](https://img.shields.io/badge/Node.js-18%2B-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)](https://nodejs.org/)
+[![AI Biometrics](https://img.shields.io/badge/AI-Face%20Recognition-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)]()
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
-**A decentralized, tamper-proof educational credential verification platform powered by Ethereum Smart Contracts (Solidity & Hardhat), Node.js, and Ethers.js for immutable academic record storage and real-time verification.**
+**A secure, biometric-enabled e-voting platform combining AI-driven Face Recognition & Liveness/Anti-Spoofing detection with Ethereum Smart Contracts (Solidity, Hardhat, Ethers.js) for tamper-proof ballot recording.**
 
-[Live Repository](https://github.com/bhavanagangavaram/EduCredentialBlockchain) · [Report Bug](https://github.com/bhavanagangavaram/EduCredentialBlockchain/issues) · [Request Feature](https://github.com/bhavanagangavaram/EduCredentialBlockchain/issues)
+[Live Demo App](https://bhavanagangavaram.github.io/EduCredentialBlockchain/) · [Live Repository](https://github.com/bhavanagangavaram/EduCredentialBlockchain) · [Report Bug](https://github.com/bhavanagangavaram/EduCredentialBlockchain/issues)
 
 </div>
 
@@ -18,17 +19,19 @@
 
 ## ⚡ Executive Summary
 
-**EduCredential Blockchain** solves the problem of academic certificate forgery by publishing student degree metadata and cryptographic hashes onto a decentralized Ethereum blockchain network. Once mined into a block, academic credentials cannot be modified, backdated, or falsified. Employers and academic institutions can verify certificate authenticity instantly via a web dashboard.
+The **AI Integrated & Blockchain E-Voting System** is a next-generation electronic voting solution designed to eliminate voter impersonation and election fraud. It enforces dual-layer security:
+1. **AI Biometric Authentication**: WebCam facial recognition with anti-spoofing liveness detection (`face-api.js`, TensorFlow models) to verify voter identity prior to ballot issuance.
+2. **Blockchain Decentralized Ledger**: Immutable ballot casting via Solidity Smart Contracts deployed on an Ethereum ledger, ensuring votes cannot be tampered with or retroactively altered.
 
 ---
 
 ## 🔑 Key Features
 
-- ⛓️ **Decentralized Ledger** — Smart contract state storage ensuring zero single point of failure or record tampering.
-- 🔐 **Cryptographic Proofs** — Hashing of certificate payloads (student ID, institution code, degree major, graduation date) via SHA-256 / Keccak-256.
-- 📜 **Smart Contract Architecture** — Solidity smart contracts deployed via Hardhat local node / testnets.
-- 🌐 **Full-Stack Web Interface** — Interactive React / Node.js dashboard connected via Ethers.js for issuing and validating credentials.
-- 🔑 **Multi-Factor OTP Security** — Integrated OTP verification service for credential request authorization.
+- 👤 **AI Face Recognition & Anti-Spoofing** — Biometric voter verification using `face-api.js` facial landmarks and anti-spoofing detection.
+- ⛓️ **Ethereum Smart Contract Ledger** — Votes are recorded as immutable transactions on smart contracts, ensuring zero single point of failure.
+- 🔐 **Multi-Factor Auth & OTP Security** — Integrated OTP verification service and Shamir secret key sharing (`secrets.js-grempe`).
+- 📊 **Real-Time Election Analytics** — Admin mode dashboard for monitoring live voter turnout, election dates, and audit logs.
+- 🌐 **Modern Responsive Web Interface** — Next.js 16 + TailwindCSS frontend with live camera feed integration.
 
 ---
 
@@ -36,16 +39,17 @@
 
 ```mermaid
 flowchart TD
-    A[University Administrator] -->|Upload Student Credential| B[Backend API & Hashing]
-    B -->|Generate Hash Signature| C[Smart Contract Invocation]
-    C -->|Execute Contract Method| D[Ethereum Blockchain Ledger]
-    D -->|Append Transaction Block| E((Immutable Record Stored))
+    A[Voter Webcam Feed] -->|Capture Live Stream| B[AI Anti-Spoofing & Face Recognition]
+    B -->|Liveness Check Passed| C[Voter Identity Verified]
+    C -->|Request OTP Code| D[OTP Verification Service]
+    D -->|Valid Code Entered| E[Ballot Access Granted]
     
-    F[Employer / Verifier] -->|Query Student Certificate ID| G[Ethers.js Query Engine]
-    G -->|Fetch Smart Contract State| D
-    D -->|Return Cryptographic Match| H{Validation Result}
-    H -->|Hashes Match| I[✅ Authentic Verified Certificate]
-    H -->|Hashes Differ| J[❌ Tamper Detected Alert]
+    E -->|Select Candidate & Cast Vote| F[Smart Contract Invocation]
+    F -->|Ethers.js Transaction| G[Ethereum Blockchain Ledger]
+    G -->|Mined into Block| H((Immutable Vote Recorded))
+    
+    I[Admin Dashboard] -->|Query Election Results| G
+    G -->|Return Auditable Totals| J[📊 Real-Time Election Results]
 ```
 
 ---
@@ -55,10 +59,14 @@ flowchart TD
 ```
 EduCredentialBlockchain/
 ├── contracts/          # Solidity smart contracts & Hardhat deploy scripts
-├── frontend/           # Web interface dashboard
-├── backend/            # Express / Node.js API services
-├── scripts/            # Deployment & data seeding scripts
-├── diagrams/           # System architecture & flow charts
+├── frontend/           # Next.js 16 + React 19 web interface
+│   ├── app/            # App router & layout templates
+│   ├── components/     # VotingApp, AdminMode & UserMode components
+│   └── public/models/  # AI face recognition model weights
+├── backend/            # Express, Node API & Python backend services
+├── diagrams/           # System architecture, usecase & sequence diagrams
+├── figures/            # Workflow & system architecture diagrams
+├── docs/               # IEEE research paper & project documentation
 └── package.json        # Main project runner script
 ```
 
@@ -84,9 +92,8 @@ EduCredentialBlockchain/
    npm run setup
    ```
 
-3. **Start Local Blockchain & Services**
+3. **Start All Services Concurrently**
    ```bash
-   # Starts local Hardhat node, backend, OTP service, and frontend concurrently
    npm start
    ```
 
