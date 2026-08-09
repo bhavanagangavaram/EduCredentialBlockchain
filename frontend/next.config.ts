@@ -1,6 +1,6 @@
 import type { NextConfig } from "next";
 
-const repoName = process.env.NEXT_PUBLIC_REPO_NAME || "AI-Integrated-E-Voting-System";
+const repoName = process.env.NEXT_PUBLIC_REPO_NAME || "AI-Integrated-Decentalized-E-Voting-System";
 
 const nextConfig: NextConfig = {
   output: "export",
