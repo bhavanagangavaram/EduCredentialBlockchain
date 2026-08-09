@@ -57,7 +57,7 @@ flowchart TD
 ## 📂 Repository Structure
 
 ```
-EduCredentialBlockchain/
+AI-Integrated-E-Voting-System/
 ├── contracts/          # Solidity smart contracts & Hardhat deploy scripts
 ├── frontend/           # Next.js 16 + React 19 web interface
 │   ├── app/            # App router & layout templates
