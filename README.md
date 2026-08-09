@@ -97,6 +97,14 @@ Distributed under the MIT License. See `LICENSE` for more details.
 
 ---
 
+## 📬 Contact & Connect
+
+- **Email**: [bhavanagangavaram1@gmail.com](mailto:bhavanagangavaram1@gmail.com)
+- **LinkedIn**: [bhavana--g](https://www.linkedin.com/in/bhavana--g/)
+- **GitHub**: [@bhavanagangavaram](https://github.com/bhavanagangavaram)
+
+---
+
 <div align="center">
   Developed by <strong><a href="https://github.com/bhavanagangavaram">Bhavana Gangavaram</a></strong>
 </div>
