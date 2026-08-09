@@ -1,6 +1,0 @@
-1:"$Sreact.fragment"
-2:I[73313,["/AI_Integrated_Decentalized_E_Voting_System/_next/static/chunks/0560c2b3ab150a83.js","/AI_Integrated_Decentalized_E_Voting_System/_next/static/chunks/f17202bb367346d5.js"],"default"]
-3:I[64381,["/AI_Integrated_Decentalized_E_Voting_System/_next/static/chunks/7b734a90b9818e71.js"],"OutletBoundary"]
-4:"$Sreact.suspense"
-0:{"buildId":"E4GCX1cAOetx8IWVeOcZg","rsc":["$","$1","c",{"children":[["$","main",null,{"children":["$","$L2",null,{}]}],[["$","script","script-0",{"src":"/AI_Integrated_Decentalized_E_Voting_System/_next/static/chunks/0560c2b3ab150a83.js","async":true}],["$","script","script-1",{"src":"/AI_Integrated_Decentalized_E_Voting_System/_next/static/chunks/f17202bb367346d5.js","async":true}]],["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"loading":null,"isPartial":false}
-5:null

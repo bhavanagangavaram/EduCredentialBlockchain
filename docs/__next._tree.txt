@@ -1,2 +1,0 @@
-:HL["/AI_Integrated_Decentalized_E_Voting_System/_next/static/chunks/dc6bd1763765d612.css","style"]
-0:{"buildId":"E4GCX1cAOetx8IWVeOcZg","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
