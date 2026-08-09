@@ -8,7 +8,7 @@ require('dotenv').config({ path: path.resolve(__dirname, '../../backend-node/.en
 const DB_PATH = path.resolve(__dirname, '../../backend-node/voters.db');
 const CONTRACT_ADDRESS = "0x5FbDB2315678afecb367f032d93F642f64180aa3";
 const PROVIDER_URL = "http://127.0.0.1:8545";
-const PRIVATE_KEY = "0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80"; // Hardhat Account #0 (Owner)
+const PRIVATE_KEY = process.env.PRIVATE_KEY || "0x0000000000000000000000000000000000000000000000000000000000000000"; // Loaded from environment
 
 // Encryption Keys (from backend .env)
 const ENC_KEY = process.env.ENC_KEY;

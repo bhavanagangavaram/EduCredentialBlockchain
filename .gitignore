@@ -12,6 +12,18 @@ _CD_Bundle*
 *.db
 *.cpython-*.pyc
 
+# Sensitive Secrets & Private Keys
+.env
+*.env
+*.env.*
+**/.env*
+priv.txt
+pub.txt
+*.key
+*.pem
+*.pfx
+*.p12
+
 # Logs & Build Cache
 *.log
 **/cache/
@@ -20,7 +32,6 @@ frontend/.next/
 frontend/out/
 
 # Environment & Temp
-.env
 .DS_Store
 .agent/
 .cursor/
