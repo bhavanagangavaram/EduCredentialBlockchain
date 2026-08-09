@@ -1,0 +1,24 @@
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Large Datasets & Media
+dataset/
+_CD_Bundle*
+*.zip
+*.mp4
+*.docx
+*.csv
+*.db
+*.cpython-*.pyc
+
+# Logs & Cache
+*.log
+**/cache/
+**/artifacts/
+
+# Environment & Temp
+.env
+.DS_Store
+.agent/
+.cursor/
