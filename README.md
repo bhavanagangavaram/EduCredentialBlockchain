@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🤖 AI Integrated & Blockchain E-Voting System
+# 🤖 AI-Integrated Decentralized E-Voting System
 
 [![React 19](https://img.shields.io/badge/React-19.2-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
 [![Next.js 16](https://img.shields.io/badge/Next.js-16.1-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)](https://nextjs.org/)
@@ -9,7 +9,7 @@
 [![AI Biometrics](https://img.shields.io/badge/AI-Face%20Recognition-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)]()
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
-**A secure, biometric-enabled e-voting platform combining AI-driven Face Recognition & Liveness/Anti-Spoofing detection with Ethereum Smart Contracts (Solidity, Hardhat, Ethers.js) for tamper-proof ballot recording.**
+**A secure, biometric-enabled electronic voting platform combining AI-driven Face Recognition & Anti-Spoofing detection with Ethereum Smart Contracts (Solidity, Hardhat, Ethers.js) for tamper-proof ballot recording.**
 
 [Live Demo App](https://bhavanagangavaram.github.io/EduCredentialBlockchain/) · [Live Repository](https://github.com/bhavanagangavaram/EduCredentialBlockchain) · [Report Bug](https://github.com/bhavanagangavaram/EduCredentialBlockchain/issues)
 
@@ -19,7 +19,7 @@
 
 ## ⚡ Executive Summary
 
-The **AI Integrated & Blockchain E-Voting System** is a next-generation electronic voting solution designed to eliminate voter impersonation and election fraud. It enforces dual-layer security:
+The **AI-Integrated Decentralized E-Voting System** is a next-generation electronic voting solution designed to eliminate voter impersonation and election fraud. It enforces dual-layer security:
 1. **AI Biometric Authentication**: WebCam facial recognition with anti-spoofing liveness detection (`face-api.js`, TensorFlow models) to verify voter identity prior to ballot issuance.
 2. **Blockchain Decentralized Ledger**: Immutable ballot casting via Solidity Smart Contracts deployed on an Ethereum ledger, ensuring votes cannot be tampered with or retroactively altered.
 
